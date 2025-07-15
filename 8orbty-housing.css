@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Special Gothic Expanded One', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #222;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo img {
+  width: 100px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #007bff;
+  transform: scale(1.05);
+}
+
+.login {
+  padding: 8px 16px;
+  border: 1px solid #007bff;
+  background-color: transparent;
+  color: #007bff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.login:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.housing-split-section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.housing-block {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.housing-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.housing-image {
+  flex: 1;
+  min-width: 280px;
+}
+
+.housing-image img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.housing-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.housing-text h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.housing-text p {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #444;
+}
+
+@media (max-width: 768px) {
+  .housing-block {
+    flex-direction: column !important;
+    text-align: center;
+  }
+}

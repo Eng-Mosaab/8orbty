@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Special Gothic Expanded One', sans-serif;
+}
+
+body {
+  background-color: #fdfdfd;
+  color: #222;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.logo img {
+  width: 110px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: transform 0.3s ease;
+}
+
+nav a:hover {
+  color: #007bff;
+  transform: scale(1.1);
+}
+
+.login {
+  padding: 8px 16px;
+  border: 1px solid #007bff;
+  background: none;
+  color: #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.vr-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.vr-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.vr-image-block img {
+  width: 440px;
+  max-width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.vr-text-block {
+  flex: 1;
+  min-width: 280px;
+}
+
+.vr-text-block h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  color: #007bff;
+}
+
+.vr-text-block p {
+  margin-bottom: 12px;
+  color: #444;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .vr-block {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .vr-image-block img {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
