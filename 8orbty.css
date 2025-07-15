@@ -1,0 +1,183 @@
+/* جيبنا الخط من جوجل عشان نستخدمه في الموقع */
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+   font-family: 'Special Gothic Expanded One', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #222;
+  padding: 20px;
+ 
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 125px;
+  height: auto;
+}
+
+.logo-img {
+  width: 500px;
+  height: auto;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+}
+
+nav a:hover{
+    color: blue;
+}
+
+nav :hover{
+    transform:scale(1.1);
+
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  align-items: center;
+  
+}
+
+.login {
+  padding: 8px 16px;
+  border: 1px solid #007bff;
+  background: none;
+  color: #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-text h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.get-started {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hero-img {
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+  flex-shrink: 0;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.feature {
+  text-align: center;
+}
+
+.small-logo {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 15px;
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+ 
+
+/* ✅ Media Queries */
+
+@media (max-width: 768px) {
+  .hero-text h2 {
+    font-size: 28px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .login {
+    align-self: flex-end;
+  }
+
+  .hero-text h2 {
+    font-size: 24px;
+  }
+
+  .get-started {
+    width: 100%;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+}

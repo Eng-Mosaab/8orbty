@@ -1,0 +1,103 @@
+/* 8orbty-community.css */
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Special Gothic Expanded One', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #222;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.logo img {
+  width: 110px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  color: #007bff;
+  transform: scale(1.05);
+}
+
+.login {
+  padding: 8px 16px;
+  border: 1px solid #007bff;
+  background: none;
+  color: #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.community-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.community-text {
+  flex: 1;
+  min-width: 280px;
+  max-width: 600px;
+}
+
+.community-text h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.community-text p {
+  margin-bottom: 14px;
+  color: #444;
+}
+
+.community-image img {
+  width: 460px;
+  max-width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .community-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .community-image img {
+    margin-top: 20px;
+  }
+
+  .community-text {
+    max-width: 100%;
+  }
+}
